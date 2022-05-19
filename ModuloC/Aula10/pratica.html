@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(151, 216, 253);
+        }
+
+        #res{
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Multiplicando Valores</h1>
+
+    <p>Insira os valores nos campos abaixo:</p>
+    
+    <input type="number" name="valor1" id="valor1">
+    <input type="number" name="valor2" id="valor2">
+    <input type="button" value="Multiplicar" id="botao">
+
+    <div id="res">Resultado</div>
+
+    <script>
+        var v1 = window.document.querySelector("input#valor1")
+        var v2 = window.document.querySelector("input#valor2")
+        var botao = window.document.querySelector("input#botao")
+        var res = window.document.querySelector("div#res")
+        botao.addEventListener("click", multi)
+        
+        function multi () {
+           var n1 = Number.parseFloat(v1.value)
+           var n2 = Number.parseFloat(v2.value)
+           let resultado = n1 * n2
+           res.innerHTML =`O resultado da multiplicação entre ${n1} e ${n2} é igual a <strong>${resultado.toFixed(0)}</strong>.`
+
+        }
+    </script>
+    
+</body>
+</html>
