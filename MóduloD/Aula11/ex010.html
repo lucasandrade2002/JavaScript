@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #res{
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Sistema de Nacionalidade</h1>
+
+    Digite no campo em que país você nasceu: <input type="text" id="país">
+    <input type="button" value="Check" onclick="verifica()">
+
+    <div id="res">Resultado</div>
+
+    <script>
+        var origem = window.document.getElementById("país")
+
+        function verifica() {
+
+            if((origem.innerText == "Brasil") || (origem.innerText == "brasil")) {
+              
+                window.document.getElementById("res").innerText = "Você é Brasileiro!"
+            }
+
+            else{
+                window.document.getElementById("res").innerText = "Você é estrangeiro!"
+            }
+        }
+    </script>
+    
+</body>
+</html>
