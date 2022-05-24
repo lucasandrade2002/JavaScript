@@ -1,0 +1,40 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(123, 189, 243);
+}
+
+header{
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+main{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.295);
+}
+
+div{
+    padding: 10px;
+}
+
+#saida{
+    width: 175px;
+}
+
+#finish{
+    margin-top: 10px;
+}
+
+footer{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

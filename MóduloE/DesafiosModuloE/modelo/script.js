@@ -1,0 +1,1 @@
+window.alert("O arquivo externo está funcionando!!")
